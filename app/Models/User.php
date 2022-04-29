@@ -43,6 +43,6 @@ class User extends Authenticatable
     ];
 
     public function records(){
-        return $this->hasMany('App\Models\PersonalRecord', 'user_id');
+        return $this->hasMany('App\Models\PersonalRecord', 'user_id')->orderBy('value', 'desc');
     }
 }
