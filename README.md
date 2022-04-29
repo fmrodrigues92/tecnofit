@@ -6,7 +6,7 @@
 - cp .env.example .env
 - criar banco de dados collation utf8mb4_unicode_ci
 - atualizar variaveis de ambiente no arquivo .env com o usuário, senha e nome da base de dados.
-- php artisan db:migrate
+- php artisan migrate
 - php artisan db:seed
 - php artisan serve
 
